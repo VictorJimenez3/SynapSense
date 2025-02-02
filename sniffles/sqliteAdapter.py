@@ -2,7 +2,7 @@ import sqlite3, time, os
 from datetime import datetime
 
 # Expand the user directory
-db_path = os.path.expanduser("~/project/SynapSense/network_logger.db")
+db_path = os.path.expanduser("~/SynapSense/network_logger.db")
 
 def create_tables():
     # Connect to the SQLite database (or create it if it doesn't exist)

@@ -1,0 +1,987 @@
+[16:03:56.754] Loading script ../sniff.py
+[16:03:56.756] HTTP(S) proxy listening at *:8080.
+[16:03:58.823][10.0.2.15:44306] client connect
+[16:03:58.912][10.0.2.15:44308] client connect
+[16:03:58.932][10.0.2.15:44306] server connect contile.services.mozilla.com:443 (34.117.188.166:443)
+[16:03:59.095][10.0.2.15:44308] server connect incoming.telemetry.mozilla.org:443 (34.120.208.123:443)
+10.0.2.15:44306: GET https://contile.services.mozilla.com/v1/tiles HTTP/2.0
+     << HTTP/2.0 200 OK 5.4k
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+[16:04:01.593][10.0.2.15:44310] client connect
+[16:04:01.673][10.0.2.15:44310] server connect ab.chatgpt.com:443 (172.64.155.209:443)
+10.0.2.15:44310: POST https://ab.chatgpt.com/v1/rgstr?k=client-e603C1J5XKDc1u… HTTP/2.0
+     << HTTP/2.0 202 Accepted 16b
+10.0.2.15:44310: POST https://ab.chatgpt.com/v1/rgstr?k=client-e603C1J5XKDc1u… HTTP/2.0
+     << HTTP/2.0 202 Accepted 16b
+[16:04:05.585][10.0.2.15:44316] client connect
+[16:04:05.686][10.0.2.15:44316] server connect firefox.settings.services.mozilla.com:443 (34.149.100.209:443)
+10.0.2.15:44316: GET https://firefox.settings.services.mozilla.com/v1/bucket… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+[16:04:06.956][10.0.2.15:44320] client connect
+[16:04:06.994][10.0.2.15:44336] client connect
+[16:04:07.031][10.0.2.15:44320] server connect ads-img.mozilla.org:443 (34.36.54.80:443)
+[16:04:07.095][10.0.2.15:44336] server connect www.amazon.com:443 (108.138.126.158:443)
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44320: GET https://ads-img.mozilla.org/v1/images?image_data=CjoKOG… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:44320: GET https://ads-img.mozilla.org/v1/images?image_data=Cj0KO2… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:44320: GET https://ads-img.mozilla.org/v1/images?image_data=CnAKbm… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+URL: https://www.amazon.com/?tag=admarketus-20&ref=pd_sl_2d8bbb7b43890154c74648a8bfbdd59a4927d23995df52729867a30e&mfadid=adm
+Subprocess output: current running dir:  /home/mjt58/SynapSense/sniffles/mitm
+
+10.0.2.15:44336: GET https://www.amazon.com/?tag=admarketus-20&ref=pd_sl_2d8… HTTP/2.0
+     << HTTP/2.0 200 OK 2.2k
+[16:04:07.493][10.0.2.15:44342] client connect
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+[16:04:07.591][10.0.2.15:44342] server connect images-na.ssl-images-amazon.com:443 (108.139.49.206:443)
+10.0.2.15:44342: GET https://images-na.ssl-images-amazon.com/images/G/01/AUI… HTTP/2.0
+     << HTTP/2.0 200 OK 18.5k
+10.0.2.15:44342: GET https://images-na.ssl-images-amazon.com/captcha/usvmglo… HTTP/2.0
+     << HTTP/2.0 200 OK 5.7k
+[16:04:07.734][10.0.2.15:44348] client connect
+[16:04:07.755][10.0.2.15:44350] client connect
+10.0.2.15:44342: GET https://images-na.ssl-images-amazon.com/images/G/01/csm… HTTP/2.0
+     << HTTP/2.0 200 OK 956b
+10.0.2.15:44342: GET https://images-na.ssl-images-amazon.com/images/G/01/csm… HTTP/2.0
+     << HTTP/2.0 200 OK 799b
+10.0.2.15:44342: GET https://images-na.ssl-images-amazon.com/images/G/01/ama… HTTP/2.0
+     << HTTP/2.0 200 OK 16.6k
+[16:04:07.799][10.0.2.15:44350] server connect safebrowsing.googleapis.com:443 (142.250.80.42:443)
+[16:04:07.807][10.0.2.15:44348] server connect fls-na.amazon.com:443 (35.173.141.116:443)
+10.0.2.15:44342: GET https://images-na.ssl-images-amazon.com/images/G/01/csm… HTTP/2.0
+     << HTTP/2.0 200 OK 2.8k
+10.0.2.15:44350: GET https://safebrowsing.googleapis.com/v4/fullHashes:find?… HTTP/2.0
+     << HTTP/2.0 200 OK 260b
+[16:04:07.913][10.0.2.15:44350] client disconnect
+[16:04:07.914][10.0.2.15:44350] server disconnect safebrowsing.googleapis.com:443 (142.250.80.42:443)
+10.0.2.15:44342: GET https://images-na.ssl-images-amazon.com/images/G/01/AUI… HTTP/2.0
+     << HTTP/2.0 200 OK 7.0k
+10.0.2.15:44348: GET https://fls-na.amazon.com/1/oc-csi/1/OP/requestId=QDTMY… HTTP/2.0
+     << HTTP/2.0 200 OK 43b
+10.0.2.15:44348: POST https://fls-na.amazon.com/1/batch/1/OE/ HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+[16:04:09.931][10.0.2.15:33396] client connect
+[16:04:09.972][10.0.2.15:33396] server connect www.google.com:443 (142.251.40.164:443)
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 9.9k
+10.0.2.15:44348: POST https://fls-na.amazon.com/1/batch/1/OE/ HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+[16:04:11.360][10.0.2.15:33406] client connect
+[16:04:11.409][10.0.2.15:33406] server connect www.wish.com:443 (172.64.145.236:443)
+10.0.2.15:33406: GET https://www.wish.com/sw.js HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+URL: https://www.wish.com/
+Subprocess output: current running dir:  /home/mjt58/SynapSense/sniffles/mitm
+
+10.0.2.15:33406: GET https://www.wish.com/ HTTP/2.0
+     << HTTP/2.0 200 OK 53.5k
+[16:04:13.166][10.0.2.15:33412] client connect
+[16:04:13.234][10.0.2.15:33412] server connect www.googletagmanager.com:443 (142.251.40.168:443)
+10.0.2.15:33412: GET https://www.googletagmanager.com/gtm.js?id=GTM-KNZ5DFR&… HTTP/2.0
+     << HTTP/2.0 200 OK 110k
+[16:04:13.461][10.0.2.15:33414] client connect
+[16:04:13.463][10.0.2.15:33424] client connect
+[16:04:13.501][10.0.2.15:33414] server connect consent.trustarc.com:443 (18.238.49.47:443)
+[16:04:13.504][10.0.2.15:33424] server connect pagead2.googlesyndication.com:443 (142.251.40.98:443)
+10.0.2.15:33414: GET https://consent.trustarc.com/notice?domain=wish.com&c=t… HTTP/2.0
+     << HTTP/2.0 200 OK 10.3k
+10.0.2.15:33424: GET https://pagead2.googlesyndication.com/pagead/js/adsbygo… HTTP/2.0
+     << HTTP/2.0 200 OK 52.4k
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/IMPRESSION_COZY_ROUT… HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+[16:04:13.853][10.0.2.15:33436] client connect
+[16:04:14.260][10.0.2.15:33440] client connect
+[16:04:14.282][10.0.2.15:33440] server connect pagead2.googlesyndication.com:443 (142.251.40.98:443)
+[16:04:14.381][10.0.2.15:33452] client connect
+10.0.2.15:33440: GET https://pagead2.googlesyndication.com/pagead/managed/js… HTTP/2.0
+     << HTTP/2.0 200 OK 143k
+[16:04:14.465][10.0.2.15:33452] server connect bat.bing.com:443 (150.171.27.10:443)
+10.0.2.15:33406: GET https://www.wish.com/sw.js HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:33452: GET https://bat.bing.com/bat.js HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:33414: GET https://consent.trustarc.com/get?name=SourceSansPro-Reg… HTTP/2.0
+     << HTTP/2.0 200 OK 106k
+[16:04:14.602][10.0.2.15:33466] client connect
+[16:04:14.615][10.0.2.15:33466] server connect www.google.com:443 (142.251.40.164:443)
+[16:04:14.627][10.0.2.15:33476] client connect
+10.0.2.15:33414: GET https://consent.trustarc.com/bannermsg?action=views&dom… HTTP/2.0
+     << HTTP/2.0 200 OK 43b
+[16:04:14.747][10.0.2.15:33476] server connect js.cnnx.link:443 (108.139.47.62:443)
+10.0.2.15:33466: POST https://www.google.com/ccm/collect?en=page_view&dl=http… HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+[16:04:14.864][10.0.2.15:33490] client connect
+10.0.2.15:33476: GET https://js.cnnx.link/roi/cnxtag-min.js?id=367673 HTTP/2.0
+     << HTTP/2.0 200 OK 1.1k
+[16:04:14.896][10.0.2.15:33502] client connect
+[16:04:14.934][10.0.2.15:33490] server connect googleads.g.doubleclick.net:443 (142.251.40.194:443)
+10.0.2.15:33452: GET https://bat.bing.com/p/action/343162573.js HTTP/2.0
+     << HTTP/2.0 200 OK 242b
+[16:04:14.988][10.0.2.15:33502] server connect trc.taboola.com:443 (151.101.65.44:443)
+10.0.2.15:33452: GET https://bat.bing.com/action/0?ti=343162573&Ver=2&mid=65… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33502: GET https://trc.taboola.com/1777854/trc/3/json?tim=17385122… HTTP/2.0
+     << HTTP/2.0 200 OK 1.4k
+10.0.2.15:33502: GET https://trc.taboola.com/1777854/log/3/unip?ce=ecomm&en=… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+[16:04:15.106][10.0.2.15:33514] client connect
+10.0.2.15:33490: GET https://googleads.g.doubleclick.net/pagead/ads?client=c… HTTP/2.0
+     << HTTP/2.0 200 OK 442b
+[16:04:15.165][10.0.2.15:33514] server connect cdn.taboola.com:443 (151.101.193.44:443)
+10.0.2.15:33514: GET https://cdn.taboola.com/scripts/cds-pips.js HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+[16:04:15.292][10.0.2.15:33530] client connect
+[16:04:15.334][10.0.2.15:33536] client connect
+[16:04:15.339][10.0.2.15:33540] client connect
+[16:04:15.348][10.0.2.15:33548] client connect
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/IMPRESSION_LOAD_FORT… HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+[16:04:15.376][10.0.2.15:33530] server connect pips.taboola.com:443 (151.101.1.44:443)
+[16:04:15.379][10.0.2.15:33536] server connect safebrowsing.googleapis.com:443 (142.250.80.42:443)
+[16:04:15.412][10.0.2.15:33540] server connect 9b7afadc4f9b.cdn4.forter.com:443 (18.164.124.40:443)
+[16:04:15.416][10.0.2.15:33548] server connect fundingchoicesmessages.google.com:443 (142.250.65.238:443)
+10.0.2.15:33536: GET https://safebrowsing.googleapis.com/v4/fullHashes:find?… HTTP/2.0
+     << HTTP/2.0 200 OK 260b
+10.0.2.15:33530: GET https://pips.taboola.com/ HTTP/2.0
+     << HTTP/2.0 200 OK 4b
+[16:04:15.550][10.0.2.15:33536] client disconnect
+[16:04:15.552][10.0.2.15:33536] server disconnect safebrowsing.googleapis.com:443 (142.250.80.42:443)
+10.0.2.15:33406: POST https://www.wish.com/api/logged-out-user/get-login-entr… HTTP/2.0
+     << HTTP/2.0 200 OK 134b
+10.0.2.15:33406: POST https://www.wish.com/api/risk-client-info-validation HTTP/2.0
+     << HTTP/2.0 200 OK 105b
+10.0.2.15:33540: GET https://9b7afadc4f9b.cdn4.forter.com/sn/9b7afadc4f9b/sc… HTTP/2.0
+     << HTTP/2.0 200 OK 190k
+10.0.2.15:33406: POST https://www.wish.com/api/logged-out-user/get-progressiv… HTTP/2.0
+     << HTTP/2.0 200 OK 1.4k
+10.0.2.15:33548: GET https://fundingchoicesmessages.google.com/i/ca-pub-8642… HTTP/2.0
+     << HTTP/2.0 200 OK 61.9k
+10.0.2.15:33406: POST https://www.wish.com/api/risk-info-validation HTTP/2.0
+     << HTTP/2.0 200 OK 120b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/IMPRESSION_WEB_BROWS… HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: GET https://www.wish.com/sw.js HTTP/2.0
+     << HTTP/2.0 200 OK 9.9k
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34064 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/IMPRESSION_LOUX_MENU… HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+[16:04:16.886][10.0.2.15:33558] client connect
+[16:04:16.989][10.0.2.15:33572] client connect
+[16:04:17.007][10.0.2.15:33572] client disconnect
+[16:04:17.008][10.0.2.15:33572] error establishing server connection: client disconnected
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+[16:04:17.028][10.0.2.15:33558] server connect canary.contestimg.wish.com:443 (104.18.42.20:443)
+10.0.2.15:33406: GET https://www.wish.com/sw.js HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:33406: POST https://www.wish.com/api/browse-category/get-browse-tre… HTTP/2.0
+     << HTTP/2.0 200 OK 1.2k
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/33972 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41259 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41259 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41259 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41259 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41259 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/feed/get-filtered-feed-categor… HTTP/2.0
+     << HTTP/2.0 200 OK 2.7k
+10.0.2.15:33558: GET https://canary.contestimg.wish.com/api/webimage/6771fb8… HTTP/2.0
+     << HTTP/2.0 200 OK 10.6k
+10.0.2.15:33558: GET https://canary.contestimg.wish.com/api/webimage/676bd35… HTTP/2.0
+     << HTTP/2.0 200 OK 7.7k
+10.0.2.15:33558: GET https://canary.contestimg.wish.com/api/webimage/675ec49… HTTP/2.0
+     << HTTP/2.0 200 OK 4.0k
+10.0.2.15:33558: GET https://canary.contestimg.wish.com/api/webimage/63ec47d… HTTP/2.0
+     << HTTP/2.0 200 OK 11.5k
+[16:04:18.177][10.0.2.15:33586] client connect
+[16:04:18.318][10.0.2.15:33586] server connect api2.amplitude.com:443 (35.161.13.176:443)
+[16:04:18.412][10.0.2.15:55192] client connect
+[16:04:18.413][10.0.2.15:55192] client disconnect
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44320: GET https://ads-img.mozilla.org/v1/images?image_data=CjoKOG… HTTP/2.0
+     << HTTP/2.0 200 OK 9.8k
+[16:04:18.552][10.0.2.15:55196] client connect
+10.0.2.15:44320: GET https://ads-img.mozilla.org/v1/images?image_data=CnAKbm… HTTP/2.0
+     << HTTP/2.0 200 OK 10.4k
+[16:04:18.605][10.0.2.15:55212] client connect
+10.0.2.15:33548: GET https://fundingchoicesmessages.google.com/f/AGSKWxX_np_… HTTP/2.0
+     << HTTP/2.0 200 OK 4.4k
+10.0.2.15:33586: POST https://api2.amplitude.com/2/httpapi HTTP/2.0
+     << HTTP/2.0 200 OK 94b
+[16:04:18.672][10.0.2.15:55196] server connect trc-events.taboola.com:443 (141.226.224.48:443)
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41259 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41253 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+[16:04:18.735][10.0.2.15:55212] server connect 399ed8264b004a85a127d0afcfc74756-9b7afadc4f9b.cdn.forter.com:443 (3.234.25.89:443)
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+[16:04:18.793][10.0.2.15:55218] client connect
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41656 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/IMPRESSION_MSITE_FEE… HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/IMPRESSION_SET_FORTE… HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/IMPRESSION_SET_FORTE… HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+[16:04:18.965][10.0.2.15:33436] server connect consent.trustarc.com:443 (18.238.49.47:443)
+[16:04:18.968][10.0.2.15:55218] server connect cdn123.forter.com:443 (18.164.124.4:443)
+10.0.2.15:55196: GET https://trc-events.taboola.com/1777854/log/3/unip?en=pr… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33406: POST https://www.wish.com/api/feed/get-collection-universal-… HTTP/2.0
+     << HTTP/2.0 200 OK 17.0k
+10.0.2.15:55212: POST https://399ed8264b004a85a127d0afcfc74756-9b7afadc4f9b.c…
+              << 200 OK 2b
+[16:04:19.146][10.0.2.15:55212] server disconnect 399ed8264b004a85a127d0afcfc74756-9b7afadc4f9b.cdn.forter.com:443 (3.234.25.89:443)
+[16:04:19.151][10.0.2.15:55212] client disconnect
+10.0.2.15:55218: GET https://cdn123.forter.com/?u=399ed8264b004a85a127d0afcf… HTTP/2.0
+     << HTTP/2.0 200 OK 34b
+10.0.2.15:33436: GET https://consent.trustarc.com/log?domain=wish.com&countr… HTTP/2.0
+     << HTTP/2.0 200 OK 43b
+[16:04:19.506][10.0.2.15:55228] client connect
+[16:04:19.545][10.0.2.15:55238] client connect
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34265 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+[16:04:19.581][10.0.2.15:55228] server connect cdn0.forter.com:443 (34.225.5.197:443)
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+[16:04:19.632][10.0.2.15:55238] server connect cdn3.forter.com:443 (18.164.124.61:443)
+10.0.2.15:33586: POST https://api2.amplitude.com/2/httpapi HTTP/2.0
+     << HTTP/2.0 200 OK 93b
+10.0.2.15:33406: POST https://www.wish.com/api/get-universal-homepage HTTP/2.0
+     << HTTP/2.0 200 OK 41.0k
+10.0.2.15:55238: POST https://cdn3.forter.com/events HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+10.0.2.15:55228: GET https://cdn0.forter.com/9b7afadc4f9b/399ed8264b004a85a1…
+              << 200 OK 20b
+[16:04:20.098][10.0.2.15:55240] client connect
+[16:04:20.130][10.0.2.15:55240] server connect ep1.adtrafficquality.google:443 (142.251.40.98:443)
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/IMPRESSION_SET_FORTE… HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33558: GET https://canary.contestimg.wish.com/api/webimage/667d234… HTTP/2.0
+     << HTTP/2.0 200 OK 7.7k
+10.0.2.15:33558: GET https://canary.contestimg.wish.com/api/webimage/62f23df… HTTP/2.0
+     << HTTP/2.0 200 OK 5.0k
+10.0.2.15:55240: GET https://ep1.adtrafficquality.google/getconfig/sodar?sv=… HTTP/2.0
+     << HTTP/2.0 200 OK 12.7k
+[16:04:20.744][10.0.2.15:55248] client connect
+[16:04:20.785][10.0.2.15:55248] server connect ep2.adtrafficquality.google:443 (142.250.176.193:443)
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41656 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/41656 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/34165 HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:55248: GET https://ep2.adtrafficquality.google/sodar/sodar2.js HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:55248: GET https://ep2.adtrafficquality.google/sodar/sodar2/232/ru… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:33466: GET https://www.google.com/recaptcha/api2/aframe HTTP/2.0
+     << HTTP/2.0 200 OK 544b
+10.0.2.15:33406: POST https://www.wish.com/api/feed/get-collection-universal-… HTTP/2.0
+     << HTTP/2.0 200 OK 19.0k
+10.0.2.15:33406: POST https://www.wish.com/api/feed/get-collection-universal-… HTTP/2.0
+     << HTTP/2.0 200 OK 12.3k
+10.0.2.15:33406: POST https://www.wish.com/api/analytics/IMPRESSION_SET_FORTE… HTTP/2.0
+     << HTTP/2.0 200 OK 72b
+10.0.2.15:55238: POST https://cdn3.forter.com/events HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+10.0.2.15:33440: GET https://pagead2.googlesyndication.com/pagead/sodar?id=s… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:55248: GET https://ep2.adtrafficquality.google/generate_204?pyUqwQ HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:55228: GET https://cdn0.forter.com/9b7afadc4f9b/399ed8264b004a85a1…
+              << 200 OK 20b
+[16:04:24.773][10.0.2.15:55262] client connect
+[16:04:24.800][10.0.2.15:55262] server connect ep1.adtrafficquality.google:443 (142.251.40.98:443)
+10.0.2.15:55262: GET https://ep1.adtrafficquality.google/pagead/sodar?id=sod… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+[16:04:25.305][10.0.2.15:55272] client connect
+[16:04:25.321][10.0.2.15:55286] client connect
+[16:04:25.323][10.0.2.15:55300] client connect
+[16:04:25.379][10.0.2.15:55286] server connect duuytoqss3gu4.cloudfront.net:443 (3.168.96.124:443)
+[16:04:25.380][10.0.2.15:55300] server connect duuytoqss3gu4.cloudfront.net:443 (3.168.96.124:443)
+[16:04:25.381][10.0.2.15:55272] server connect duuytoqss3gu4.cloudfront.net:443 (3.168.96.124:443)
+10.0.2.15:55286: GET https://duuytoqss3gu4.cloudfront.net/logo_medium.gif?ch… HTTP/2.0
+     << HTTP/2.0 200 OK 48b
+[16:04:25.552][10.0.2.15:55286] client disconnect
+[16:04:25.555][10.0.2.15:55286] server disconnect duuytoqss3gu4.cloudfront.net:443 (3.168.96.124:443)
+10.0.2.15:55272: GET https://duuytoqss3gu4.cloudfront.net/logo_small.gif?dfp… HTTP/2.0
+     << HTTP/2.0 200 OK 48b
+10.0.2.15:55300: GET https://duuytoqss3gu4.cloudfront.net/logo_large.gif?173… HTTP/2.0
+     << HTTP/2.0 200 OK 48b
+[16:04:25.571][10.0.2.15:55272] client disconnect
+[16:04:25.573][10.0.2.15:55272] server disconnect duuytoqss3gu4.cloudfront.net:443 (3.168.96.124:443)
+10.0.2.15:55228: GET https://cdn0.forter.com/9b7afadc4f9b/399ed8264b004a85a1…
+              << 200 OK 20b
+[16:04:29.437][10.0.2.15:45146] client connect
+10.0.2.15:33406: POST https://www.wish.com/api/mobile/log-tile-interactions HTTP/2.0
+     << HTTP/2.0 200 OK 105b
+[16:04:29.483][10.0.2.15:45146] server connect cdn0.forter.com:443 (34.192.191.43:443)
+10.0.2.15:45146: GET https://cdn0.forter.com/9b7afadc4f9b/399ed8264b004a85a1…
+              << 101 Switching Protocols 0b
+10.0.2.15:45146 -> WebSocket text message -> cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:45146 <- WebSocket text message <- cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:45146 -> WebSocket text message -> cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:45146 <- WebSocket text message <- cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:45146 -> WebSocket text message -> cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:45146 <- WebSocket text message <- cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:33548: GET https://fundingchoicesmessages.google.com/f/AGSKWxX-gdI… HTTP/2.0
+     << HTTP/2.0 200 OK 80b
+10.0.2.15:33548: POST https://fundingchoicesmessages.google.com/el/AGSKWxUqW4… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33440: GET https://pagead2.googlesyndication.com/pagead/js/rum.js?… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:33548: POST https://fundingchoicesmessages.google.com/el/AGSKWxUqW4… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33548: POST https://fundingchoicesmessages.google.com/el/AGSKWxUqW4… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33548: POST https://fundingchoicesmessages.google.com/el/AGSKWxUqW4… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33548: GET https://fundingchoicesmessages.google.com/f/AGSKWxVCOy9… HTTP/2.0
+     << HTTP/2.0 200 OK 2.4k
+10.0.2.15:33548: POST https://fundingchoicesmessages.google.com/el/AGSKWxUqW4… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33548: GET https://fundingchoicesmessages.google.com/f/AGSKWxVt4ht… HTTP/2.0
+     << HTTP/2.0 200 OK 1.4k
+10.0.2.15:33548: GET https://fundingchoicesmessages.google.com/f/AGSKWxWxEl_… HTTP/2.0
+     << HTTP/2.0 200 OK 1.5k
+10.0.2.15:33548: POST https://fundingchoicesmessages.google.com/el/AGSKWxU27A… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33548: POST https://fundingchoicesmessages.google.com/el/AGSKWxUqW4… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:45146 -> WebSocket text message -> cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:45146 <- WebSocket text message <- cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:55238: POST https://cdn3.forter.com/events HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+10.0.2.15:45146 -> WebSocket text message -> cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:45146 <- WebSocket text message <- cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+10.0.2.15:45146 -> WebSocket text message -> cdn0.forter.com:443/9b7afadc4f9b/399ed8264b004a85a127d0afcfc74756/p
+WebSocket connection closed by client: 1000 ok
+[16:04:38.643][10.0.2.15:45146] server disconnect cdn0.forter.com:443 (34.192.191.43:443)
+[16:04:38.645][10.0.2.15:45146] client disconnect
+[16:04:39.365][10.0.2.15:55228] server disconnect cdn0.forter.com:443 (34.225.5.197:443)
+10.0.2.15:33406: POST https://www.wish.com/api/experiments/record-assignment-… HTTP/2.0
+     << HTTP/2.0 200 OK 107b
+10.0.2.15:33406: POST https://www.wish.com/api/web/user/status HTTP/2.0
+     << HTTP/2.0 200 OK 7.0k
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 14.5k
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44320: GET https://ads-img.mozilla.org/v1/images?image_data=CjoKOG… HTTP/2.0
+     << HTTP/2.0 200 OK 9.8k
+10.0.2.15:44320: GET https://ads-img.mozilla.org/v1/images?image_data=CnAKbm… HTTP/2.0
+     << HTTP/2.0 200 OK 10.4k
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:33406: POST https://www.wish.com/api/experiments/record-assignment-… HTTP/2.0
+     << HTTP/2.0 200 OK 107b
+[16:05:15.259][10.0.2.15:50044] client connect
+[16:05:15.282][10.0.2.15:50044] server connect pypi.org:443 (151.101.128.223:443)
+10.0.2.15:50044: GET https://pypi.org/project/mitmproxy/ HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+[16:05:15.802][10.0.2.15:50060] client connect
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+[16:05:15.839][10.0.2.15:50066] client connect
+[16:05:15.926][10.0.2.15:50066] server connect pypi-camo.freetls.fastly.net:443 (151.101.130.79:443)
+[16:05:15.928][10.0.2.15:50060] server connect www.fastly-insights.com:443 (151.101.194.91:443)
+10.0.2.15:50044: GET https://pypi.org/static/images/logo-small.8998e9d1.svg HTTP/2.0
+     << HTTP/2.0 200 OK 51.8k
+[16:05:15.994][10.0.2.15:50078] client connect
+10.0.2.15:33412: GET https://www.googletagmanager.com/gtag/js?id=UA-55961911… HTTP/2.0
+     << HTTP/2.0 200 OK 82.8k
+10.0.2.15:50044: GET https://pypi.org/static/images/blue-cube.572a5bfb.svg HTTP/2.0
+ << stream reset by client (CANCEL)
+10.0.2.15:50044: GET https://pypi.org/static/images/white-cube.2351a86c.svg HTTP/2.0
+ << stream reset by client (CANCEL)
+10.0.2.15:33412: GET https://www.googletagmanager.com/gtag/js?id=G-RW7D75DF8… HTTP/2.0
+     << HTTP/2.0 200 OK 109k
+[16:05:16.122][10.0.2.15:50078] server connect media.ethicalads.io:443 (104.26.4.62:443)
+10.0.2.15:50060: GET https://www.fastly-insights.com/insights.js?k=6a52360a-…
+              << 204 No content 0b
+[16:05:16.285][10.0.2.15:50060] server disconnect www.fastly-insights.com:443 (151.101.194.91:443)
+[16:05:16.296][10.0.2.15:50060] client disconnect
+10.0.2.15:50078: GET https://media.ethicalads.io/media/client/v1.4.0/ethical… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:33406: POST https://www.wish.com/api/web/user/status HTTP/2.0
+     << HTTP/2.0 200 OK 7.0k
+10.0.2.15:50066: GET https://pypi-camo.freetls.fastly.net/de44c5b49ef649fd59… HTTP/2.0
+     << HTTP/2.0 200 OK 5.9k
+10.0.2.15:50066: GET https://pypi-camo.freetls.fastly.net/1d0905d1878cb7f886… HTTP/2.0
+     << HTTP/2.0 200 OK 2.3k
+10.0.2.15:50066: GET https://pypi-camo.freetls.fastly.net/1ee6eab62804a0937e… HTTP/2.0
+     << HTTP/2.0 200 OK 4.8k
+10.0.2.15:50066: GET https://pypi-camo.freetls.fastly.net/24647060e64018d984… HTTP/2.0
+     << HTTP/2.0 200 OK 2.2k
+10.0.2.15:50066: GET https://pypi-camo.freetls.fastly.net/ffc343d7b4438b6aca… HTTP/2.0
+     << HTTP/2.0 200 OK 2.3k
+10.0.2.15:50066: GET https://pypi-camo.freetls.fastly.net/b1f8686a7470ad25db… HTTP/2.0
+     << HTTP/2.0 200 OK 1.1k
+10.0.2.15:50066: GET https://pypi-camo.freetls.fastly.net/95d270a7ebd6212ca1… HTTP/2.0
+     << HTTP/2.0 200 OK 1.1k
+[16:05:16.931][10.0.2.15:50090] client connect
+10.0.2.15:50044: GET https://pypi.org/static/webfonts/fa-solid-900.2463b90d.… HTTP/2.0
+     << HTTP/2.0 200 OK 155k
+10.0.2.15:50044: GET https://pypi.org/_includes/current-user-indicator/ HTTP/2.0
+     << HTTP/2.0 200 OK 1.4k
+[16:05:17.009][10.0.2.15:50094] client connect
+[16:05:17.013][10.0.2.15:50090] server connect 2p66nmmycsj3.statuspage.io:443 (18.238.49.60:443)
+[16:05:17.015][10.0.2.15:50106] client connect
+10.0.2.15:50044: GET https://pypi.org/_includes/flash-messages/ HTTP/2.0
+     << HTTP/2.0 200 OK 3b
+10.0.2.15:50044: GET https://pypi.org/_includes/notification-banners/ HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/administer-project-include/m… HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/edit-project-button/mitmprox… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/submit-malware-report/mitmpr… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50066: GET https://pypi-camo.freetls.fastly.net/6c5f4a5a5b89492bea… HTTP/2.0
+     << HTTP/2.0 200 OK 1.1k
+[16:05:17.110][10.0.2.15:50094] server connect media.ethicalads.io:443 (104.26.4.62:443)
+[16:05:17.136][10.0.2.15:50106] server connect server.ethicalads.io:443 (172.67.71.230:443)
+10.0.2.15:50090: GET https://2p66nmmycsj3.statuspage.io/api/v2/status.json HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/session-notifications/ HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50094: GET https://media.ethicalads.io/abp/px.gif?ch=1&rn=7.602370… HTTP/2.0
+     << HTTP/2.0 200 OK 43b
+10.0.2.15:50094: GET https://media.ethicalads.io/abp/px.gif?ch=2&rn=7.602370… HTTP/2.0
+     << HTTP/2.0 200 OK 43b
+10.0.2.15:50106: GET https://server.ethicalads.io/api/v1/decision/?publisher… HTTP/2.0
+     << HTTP/2.0 200 OK 796b
+[16:05:17.408][10.0.2.15:50118] client connect
+10.0.2.15:33412: GET https://www.googletagmanager.com/gtag/js?id=G-B0F3Y2XW9… HTTP/2.0
+     << HTTP/2.0 200 OK 99.4k
+[16:05:17.480][10.0.2.15:50118] server connect ethicalads.blob.core.windows.net:443 (20.209.68.33:443)
+[16:05:17.543][10.0.2.15:50122] client connect
+[16:05:17.578][10.0.2.15:50122] server connect www.google-analytics.com:443 (142.250.80.14:443)
+10.0.2.15:50118: GET https://ethicalads.blob.core.windows.net/media/images/2…
+              << 200 OK 51.7k
+10.0.2.15:50122: GET https://www.google-analytics.com/analytics.js HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50122: POST https://www.google-analytics.com/g/collect?v=2&tid=G-RW… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:50122: POST https://www.google-analytics.com/g/collect?v=2&tid=G-B0… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:50122: POST https://www.google-analytics.com/j/collect?v=1&_v=j101&… HTTP/2.0
+     << HTTP/2.0 200 OK 1b
+[16:05:19.044][10.0.2.15:55196] server disconnect trc-events.taboola.com:443 (141.226.224.48:443)
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+10.0.2.15:55238: POST https://cdn3.forter.com/events HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 4.0k
+URL: https://pypi.org/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable
+Subprocess output: current running dir:  /home/mjt58/SynapSense/sniffles/mitm
+
+10.0.2.15:50044: GET https://pypi.org/search/?c=Development+Status+%3A%3A+5+… HTTP/2.0
+     << HTTP/2.0 200 OK 2.9k
+10.0.2.15:50122: POST https://www.google-analytics.com/g/collect?v=2&tid=G-B0… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:50122: POST https://www.google-analytics.com/g/collect?v=2&tid=G-RW… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:50044: GET https://pypi.org/_fs-ch-1T1wmsGaOgGaSxcX/assets/inter-v… HTTP/2.0
+     << HTTP/2.0 200 OK 76.6k
+10.0.2.15:50044: GET https://pypi.org/_fs-ch-1T1wmsGaOgGaSxcX/assets/styles.… HTTP/2.0
+     << HTTP/2.0 200 OK 3.8k
+10.0.2.15:50044: GET https://pypi.org/_fs-ch-1T1wmsGaOgGaSxcX/errors.js HTTP/2.0
+     << HTTP/2.0 200 OK 2.8k
+10.0.2.15:50044: GET https://pypi.org/favicon.ico HTTP/2.0
+     << HTTP/2.0 200 OK 694b
+10.0.2.15:50044: GET https://pypi.org/_fs-ch-1T1wmsGaOgGaSxcX/script.js?relo… HTTP/2.0
+     << HTTP/2.0 200 OK 55.0k
+URL: https://pypi.org/fastly/logo
+Subprocess output: current running dir:  /home/mjt58/SynapSense/sniffles/mitm
+
+10.0.2.15:50044: GET https://pypi.org/fastly/logo HTTP/2.0
+     << HTTP/2.0 404 Not Found 1.9k
+10.0.2.15:50044: POST https://pypi.org/_fs-ch-1T1wmsGaOgGaSxcX/fst-post-back HTTP/2.0
+     << HTTP/2.0 200 OK 21b
+URL: https://pypi.org/search/?c=Development+Status+%3A%3A+5+-+Production%2FStable
+Subprocess output: current running dir:  /home/mjt58/SynapSense/sniffles/mitm
+
+10.0.2.15:50044: GET https://pypi.org/search/?c=Development+Status+%3A%3A+5+… HTTP/2.0
+     << HTTP/2.0 200 OK 23.6k
+[16:05:33.367][10.0.2.15:52144] client connect
+10.0.2.15:50078: GET https://media.ethicalads.io/media/client/v1.4.0/ethical… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+[16:05:33.462][10.0.2.15:52144] server connect www.fastly-insights.com:443 (151.101.130.91:443)
+10.0.2.15:52144: GET https://www.fastly-insights.com/insights.js?k=6a52360a-…
+              << 200 OK 6.8k
+10.0.2.15:50090: GET https://2p66nmmycsj3.statuspage.io/api/v2/status.json HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/notification-banners/ HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/flash-messages/ HTTP/2.0
+     << HTTP/2.0 200 OK 3b
+10.0.2.15:50044: GET https://pypi.org/_includes/session-notifications/ HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+[16:05:33.773][10.0.2.15:52148] client connect
+10.0.2.15:50044: GET https://pypi.org/_includes/current-user-indicator/ HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+[16:05:33.836][10.0.2.15:52148] server connect fastly-insights.com:443 (151.101.130.91:443)
+10.0.2.15:52148: GET https://fastly-insights.com/api/v1/config/6a52360a-f306…
+              << 200 OK 17.9k
+10.0.2.15:50044: GET https://pypi.org/static/images/favicon.35549fe8.ico HTTP/2.0
+     << HTTP/2.0 200 OK 3.9k
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+[16:05:34.126][10.0.2.15:52160] client connect
+[16:05:34.175][10.0.2.15:52160] server connect lga-v4.pops.fastly-insights.com:443 (199.232.38.91:443)
+10.0.2.15:50122: GET https://www.google-analytics.com/collect?v=1&_v=j101&ai… HTTP/2.0
+     << HTTP/2.0 200 OK 35b
+10.0.2.15:52160: GET https://lga-v4.pops.fastly-insights.com/o.svg?u=c8b08fb…
+              << 200 OK 378b
+[16:05:34.253][10.0.2.15:52160] server disconnect lga-v4.pops.fastly-insights.com:443 (199.232.38.91:443)
+[16:05:34.255][10.0.2.15:52160] client disconnect
+[16:05:34.271][10.0.2.15:52162] client connect
+[16:05:34.327][10.0.2.15:52162] server connect c8b08fb7-eed9-4838-ae1e-eea596dd5f3a.us.u.fastly-insights.com:443 (151.101.2.91:443)
+10.0.2.15:52162: GET https://c8b08fb7-eed9-4838-ae1e-eea596dd5f3a.us.u.fastl…
+              << 200 OK 619b
+[16:05:34.465][10.0.2.15:52166] client connect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:34.835][10.0.2.15:52166] server connect cpt-v4.pops.fastly-insights.com:443 (151.101.226.91:443)
+10.0.2.15:52166: GET https://cpt-v4.pops.fastly-insights.com/o.svg?u=c8b08fb…
+              << 200 OK 378b
+[16:05:35.558][10.0.2.15:52166] server disconnect cpt-v4.pops.fastly-insights.com:443 (151.101.226.91:443)
+[16:05:35.563][10.0.2.15:52166] client disconnect
+[16:05:35.590][10.0.2.15:52174] client connect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:35.647][10.0.2.15:52174] server connect kpdk-v4.pops.fastly-insights.com:443 (151.101.54.91:443)
+10.0.2.15:52174: GET https://kpdk-v4.pops.fastly-insights.com/o.svg?u=c8b08f…
+              << 200 OK 378b
+[16:05:35.755][10.0.2.15:52174] server disconnect kpdk-v4.pops.fastly-insights.com:443 (151.101.54.91:443)
+[16:05:35.756][10.0.2.15:52174] client disconnect
+[16:05:35.780][10.0.2.15:52190] client connect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:36.169][10.0.2.15:52190] server connect maa-v4.pops.fastly-insights.com:443 (151.101.158.91:443)
+10.0.2.15:52190: GET https://maa-v4.pops.fastly-insights.com/o.svg?u=c8b08fb…
+              << 200 OK 378b
+[16:05:36.782][10.0.2.15:52190] server disconnect maa-v4.pops.fastly-insights.com:443 (151.101.158.91:443)
+[16:05:36.783][10.0.2.15:52190] client disconnect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:36.840][10.0.2.15:52204] client connect
+[16:05:36.901][10.0.2.15:52204] server connect bare-v4.pops.fastly-insights.com:443 (146.75.34.91:443)
+10.0.2.15:52204: GET https://bare-v4.pops.fastly-insights.com/o.svg?u=c8b08f…
+              << 200 OK 378b
+[16:05:37.117][10.0.2.15:52204] server disconnect bare-v4.pops.fastly-insights.com:443 (146.75.34.91:443)
+[16:05:37.119][10.0.2.15:52204] client disconnect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:37.174][10.0.2.15:52206] client connect
+[16:05:37.480][10.0.2.15:52206] server connect wlg-v4.pops.fastly-insights.com:443 (151.101.234.91:443)
+10.0.2.15:52206: GET https://wlg-v4.pops.fastly-insights.com/o.svg?u=c8b08fb…
+              << 200 OK 378b
+[16:05:38.017][10.0.2.15:52206] server disconnect wlg-v4.pops.fastly-insights.com:443 (151.101.234.91:443)
+[16:05:38.018][10.0.2.15:52206] client disconnect
+[16:05:38.060][10.0.2.15:52210] client connect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:38.107][10.0.2.15:52210] server connect kiad-v4.pops.fastly-insights.com:443 (146.75.30.91:443)
+10.0.2.15:52210: GET https://kiad-v4.pops.fastly-insights.com/o.svg?u=c8b08f…
+              << 200 OK 378b
+[16:05:38.197][10.0.2.15:52210] server disconnect kiad-v4.pops.fastly-insights.com:443 (146.75.30.91:443)
+[16:05:38.200][10.0.2.15:52210] client disconnect
+10.0.2.15:50044: GET https://pypi.org/project/correios-lib/ HTTP/2.0
+     << HTTP/2.0 301 Moved Permanently 219b
+URL: https://pypi.org/project/correios_lib/
+Subprocess output: current running dir:  /home/mjt58/SynapSense/sniffles/mitm
+
+10.0.2.15:50044: GET https://pypi.org/project/correios_lib/ HTTP/2.0
+     << HTTP/2.0 200 OK 8.5k
+10.0.2.15:52144: GET https://www.fastly-insights.com/insights.js?k=6a52360a-…
+              << 200 OK 7.0k
+10.0.2.15:50078: GET https://media.ethicalads.io/media/client/v1.4.0/ethical… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50066: GET https://pypi-camo.freetls.fastly.net/b9c496bebcb988e4b2… HTTP/2.0
+     << HTTP/2.0 200 OK 1.8k
+10.0.2.15:50090: GET https://2p66nmmycsj3.statuspage.io/api/v2/status.json HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/flash-messages/ HTTP/2.0
+     << HTTP/2.0 200 OK 3b
+10.0.2.15:50044: GET https://pypi.org/_includes/notification-banners/ HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/session-notifications/ HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/submit-malware-report/correi… HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/administer-project-include/c… HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/edit-project-button/correios… HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+10.0.2.15:50044: GET https://pypi.org/_includes/current-user-indicator/ HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:50094: GET https://media.ethicalads.io/abp/px.gif?ch=2&rn=10.37863… HTTP/2.0
+     << HTTP/2.0 200 OK 43b
+10.0.2.15:50094: GET https://media.ethicalads.io/abp/px.gif?ch=1&rn=10.37863… HTTP/2.0
+     << HTTP/2.0 200 OK 43b
+10.0.2.15:50106: GET https://server.ethicalads.io/api/v1/decision/?publisher… HTTP/2.0
+     << HTTP/2.0 200 OK 794b
+10.0.2.15:50044: GET https://pypi.org/static/images/favicon.35549fe8.ico HTTP/2.0
+     << HTTP/2.0 200 OK 3.9k
+10.0.2.15:50122: POST https://www.google-analytics.com/g/collect?v=2&tid=G-RW… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:50122: POST https://www.google-analytics.com/g/collect?v=2&tid=G-B0… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:50118: GET https://ethicalads.blob.core.windows.net/media/images/2…
+              << 200 OK 31.9k
+10.0.2.15:50122: GET https://www.google-analytics.com/collect?v=1&_v=j101&ai… HTTP/2.0
+     << HTTP/2.0 200 OK 35b
+10.0.2.15:52148: GET https://fastly-insights.com/api/v1/config/6a52360a-f306…
+              << 200 OK 17.9k
+[16:05:39.729][10.0.2.15:34862] client connect
+[16:05:39.884][10.0.2.15:34862] server connect muc-v4.pops.fastly-insights.com:443 (199.232.190.91:443)
+10.0.2.15:34862: GET https://muc-v4.pops.fastly-insights.com/o.svg?u=905c45a…
+              << 200 OK 378b
+[16:05:40.127][10.0.2.15:34862] server disconnect muc-v4.pops.fastly-insights.com:443 (199.232.190.91:443)
+[16:05:40.128][10.0.2.15:34862] client disconnect
+[16:05:40.154][10.0.2.15:34872] client connect
+[16:05:40.204][10.0.2.15:34872] server connect 905c45a1-106b-4c5a-b825-1f402506f64a.us.u.fastly-insights.com:443 (151.101.2.91:443)
+10.0.2.15:34872: GET https://905c45a1-106b-4c5a-b825-1f402506f64a.us.u.fastl…
+              << 200 OK 619b
+[16:05:40.340][10.0.2.15:34888] client connect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:40.383][10.0.2.15:34888] server connect bos-v4.pops.fastly-insights.com:443 (151.101.118.91:443)
+10.0.2.15:34888: GET https://bos-v4.pops.fastly-insights.com/o.svg?u=905c45a…
+              << 200 OK 378b
+[16:05:40.465][10.0.2.15:34888] server disconnect bos-v4.pops.fastly-insights.com:443 (151.101.118.91:443)
+[16:05:40.467][10.0.2.15:34888] client disconnect
+[16:05:40.498][10.0.2.15:34894] client connect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:40.528][10.0.2.15:34894] server connect any-v4.pops.fastly-insights.com:443 (151.101.2.91:443)
+10.0.2.15:34894: GET https://any-v4.pops.fastly-insights.com/o.svg?u=905c45a…
+              << 200 OK 378b
+[16:05:40.590][10.0.2.15:34894] server disconnect any-v4.pops.fastly-insights.com:443 (151.101.2.91:443)
+[16:05:40.593][10.0.2.15:34894] client disconnect
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 13.8k
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 1.0k
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 610b
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 670b
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 407b
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 401b
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+ << stream reset by client (CANCEL)
+10.0.2.15:33406: POST https://www.wish.com/api/experiments/record-assignment-… HTTP/2.0
+     << HTTP/2.0 200 OK 107b
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+ << stream reset by client (CANCEL)
+10.0.2.15:33396: GET https://www.google.com/complete/search?client=firefox&c… HTTP/2.0
+     << HTTP/2.0 200 OK 397b
+10.0.2.15:33466: GET https://www.google.com/search?client=ubuntu-sn&channel=… HTTP/2.0
+     << HTTP/2.0 200 OK 80.9k
+[16:05:45.322][10.0.2.15:34908] client connect
+10.0.2.15:44308: POST https://incoming.telemetry.mozilla.org/submit/firefox-d… HTTP/2.0
+     << HTTP/2.0 200 OK 20b
+[16:05:45.425][10.0.2.15:34912] client connect
+[16:05:45.444][10.0.2.15:34918] client connect
+[16:05:45.454][10.0.2.15:34912] client disconnect
+[16:05:45.456][10.0.2.15:34912] error establishing server connection: client disconnected
+[16:05:45.458][10.0.2.15:34918] client disconnect
+[16:05:45.460][10.0.2.15:34918] error establishing server connection: client disconnected
+[16:05:45.464][10.0.2.15:34934] client connect
+[16:05:45.484][10.0.2.15:34908] server connect lh3.google.com:443 (142.251.40.110:443)
+[16:05:45.504][10.0.2.15:34946] client connect
+10.0.2.15:33466: GET https://www.google.com/images/nav_logo321.webp HTTP/2.0
+ << stream reset by client (CANCEL)
+[16:05:45.541][10.0.2.15:34954] client connect
+10.0.2.15:33466: GET https://www.google.com/pagead/1p-conversion/16521530460… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:50122: POST https://www.google-analytics.com/g/collect?v=2&tid=G-B0… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:50122: POST https://www.google-analytics.com/g/collect?v=2&tid=G-RW… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+[16:05:45.591][10.0.2.15:34946] server connect id.google.com:443 (142.250.80.99:443)
+[16:05:45.594][10.0.2.15:34934] server connect www.googleadservices.com:443 (172.217.165.130:443)
+[16:05:45.609][10.0.2.15:34956] client connect
+10.0.2.15:34908: GET https://lh3.google.com/u/0/ogw/AF2bZyhgFyxvEgVU2R4m2WXj… HTTP/2.0
+     << HTTP/2.0 302 Found 1.6k
+[16:05:45.651][10.0.2.15:34954] server connect kcgs-v4.pops.fastly-insights.com:443 (146.75.38.91:443)
+10.0.2.15:33466: POST https://www.google.com/gen_204?s=web&t=aft&atyp=csi&ei=… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+[16:05:45.751][10.0.2.15:34956] server connect csp.withgoogle.com:443 (142.250.65.177:443)
+10.0.2.15:34946: GET https://id.google.com/verify/ADzY0WW4akp_v2iUVhLk5BRPq2… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+[16:05:45.800][10.0.2.15:34968] client connect
+[16:05:45.801][10.0.2.15:34976] client connect
+10.0.2.15:34934: GET https://www.googleadservices.com/pagead/conversion/1652… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:34954: GET https://kcgs-v4.pops.fastly-insights.com/o.svg?u=905c45…
+              << 200 OK 378b
+[16:05:45.865][10.0.2.15:34954] server disconnect kcgs-v4.pops.fastly-insights.com:443 (146.75.38.91:443)
+[16:05:45.866][10.0.2.15:34954] client disconnect
+[16:05:45.897][10.0.2.15:34976] server connect lh3.googleusercontent.com:443 (142.250.80.97:443)
+[16:05:45.901][10.0.2.15:34968] server connect ogads-pa.clients6.google.com:443 (142.251.40.138:443)
+10.0.2.15:34956: POST https://csp.withgoogle.com/csp/gws/fff HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:34976: GET https://lh3.googleusercontent.com/fife/ALs6j_HdAVp9DqFZ… HTTP/2.0
+     << HTTP/2.0 200 OK 466b
+10.0.2.15:34968: OPTIONS https://ogads-pa.clients6.google.com/$rpc/google.intern… HTTP/2.0
+     << HTTP/2.0 200 OK 0b
+[16:05:46.080][10.0.2.15:34992] client connect
+[16:05:46.095][10.0.2.15:34992] server connect ogads-pa.clients6.google.com:443 (142.251.40.138:443)
+10.0.2.15:34992: POST https://ogads-pa.clients6.google.com/$rpc/google.intern… HTTP/2.0
+     << HTTP/2.0 200 OK 34b
+[16:05:46.971][10.0.2.15:35006] client connect
+[16:05:46.974][10.0.2.15:35022] client connect
+10.0.2.15:33466: POST https://www.google.com/gen_204?atyp=csi&ei=2JefZ_OFNMmY… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33466: POST https://www.google.com/gen_204?atyp=i&ei=2JefZ_OFNMmYpt… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33466: POST https://www.google.com/url?sa=t&source=web&rct=j&opi=89… HTTP/2.0
+     << HTTP/2.0 200 OK 399b
+10.0.2.15:33466: POST https://www.google.com/gen_204?atyp=csi&ei=2JefZ_OFNMmY… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+[16:05:47.068][10.0.2.15:35022] server connect play.google.com:443 (142.251.40.110:443)
+10.0.2.15:33466: GET https://www.google.com/xjs/_/js/md=2/k=xjs.s.en.YHhztlZ… HTTP/2.0
+ << stream reset by client (CANCEL)
+[16:05:47.086][10.0.2.15:35006] server connect www.wikipedia.org:443 (208.80.154.224:443)
+10.0.2.15:33406: POST https://www.wish.com/api/web/user/status HTTP/2.0
+     << HTTP/2.0 200 OK 7.1k
+10.0.2.15:35022: POST https://play.google.com/log?format=json&hasfast=true&au… HTTP/2.0
+     << HTTP/2.0 200 OK 131b
+URL: https://www.wikipedia.org/
+Subprocess output: current running dir:  /home/mjt58/SynapSense/sniffles/mitm
+
+10.0.2.15:35006: GET https://www.wikipedia.org/ HTTP/2.0
+     << HTTP/2.0 200 OK 21.4k
+10.0.2.15:33466: GET https://www.google.com/xjs/_/js/k=xjs.s.en.YHhztlZdFuk.… HTTP/2.0
+ << stream reset by client (CANCEL)
+10.0.2.15:33466: POST https://www.google.com/gen_204?atyp=i&ei=2JefZ_OFNMmYpt… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:33466: POST https://www.google.com/gen_204?atyp=i&ei=2JefZ_OFNMmYpt… HTTP/2.0
+     << HTTP/2.0 204 No Content 0b
+10.0.2.15:35006: GET https://www.wikipedia.org/portal/wikipedia.org/assets/i… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:35006: GET https://www.wikipedia.org/portal/wikipedia.org/assets/j… HTTP/2.0
+     << HTTP/2.0 200 OK 7.8k
+10.0.2.15:35006: GET https://www.wikipedia.org/portal/wikipedia.org/assets/j… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:35006: GET https://www.wikipedia.org/portal/wikipedia.org/assets/i… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:35006: GET https://www.wikipedia.org/portal/wikipedia.org/assets/i… HTTP/2.0
+     << HTTP/2.0 200 OK 2.0k
+10.0.2.15:35006: GET https://www.wikipedia.org/static/apple-touch/wikipedia.… HTTP/2.0
+     << HTTP/2.0 200 OK 1.3k
+10.0.2.15:35006: GET https://www.wikipedia.org/static/favicon/wikipedia.ico HTTP/2.0
+     << HTTP/2.0 200 OK 1.0k
+[16:05:50.612][10.0.2.15:47066] client connect
+[16:05:50.687][10.0.2.15:47066] server connect mci-v4.pops.fastly-insights.com:443 (199.232.74.91:443)
+10.0.2.15:47066: GET https://mci-v4.pops.fastly-insights.com/o.svg?u=905c45a…
+              << 200 OK 378b
+[16:05:50.788][10.0.2.15:47066] server disconnect mci-v4.pops.fastly-insights.com:443 (199.232.74.91:443)
+[16:05:50.789][10.0.2.15:47066] client disconnect
+[16:05:50.806][10.0.2.15:47070] client connect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:50.835][10.0.2.15:47070] server connect pmo-v4.pops.fastly-insights.com:443 (146.75.58.91:443)
+[16:05:50.847][10.0.2.15:47070] Server TLS handshake failed. Certificate verify failed: hostname mismatch
+[16:05:50.848][10.0.2.15:47070] Unable to establish TLS connection with server (Certificate verify failed: hostname mismatch). Trying to establish TLS with client anyway. If you plan to redirect requests away from this server, consider setting `connection_strategy` to `lazy` to suppress early connections.
+[16:05:50.857][10.0.2.15:47070] server disconnect pmo-v4.pops.fastly-insights.com:443 (146.75.58.91:443)
+10.0.2.15:47070: GET https://pmo-v4.pops.fastly-insights.com/o.svg?u=905c45a… HTTP/2.0
+ << Certificate verify failed: hostname mismatch
+[16:05:50.897][10.0.2.15:47086] client connect
+[16:05:50.954][10.0.2.15:47086] server connect gnv-v4.pops.fastly-insights.com:443 (146.75.86.91:443)
+10.0.2.15:47086: GET https://gnv-v4.pops.fastly-insights.com/o.svg?u=905c45a…
+              << 200 OK 378b
+[16:05:51.072][10.0.2.15:47086] server disconnect gnv-v4.pops.fastly-insights.com:443 (146.75.86.91:443)
+[16:05:51.074][10.0.2.15:47086] client disconnect
+[16:05:51.089][10.0.2.15:47088] client connect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:51.139][10.0.2.15:47088] server connect kteb-v4.pops.fastly-insights.com:443 (151.101.46.91:443)
+10.0.2.15:47088: GET https://kteb-v4.pops.fastly-insights.com/o.svg?u=905c45…
+              << 200 OK 378b
+[16:05:51.182][10.0.2.15:47088] server disconnect kteb-v4.pops.fastly-insights.com:443 (151.101.46.91:443)
+[16:05:51.184][10.0.2.15:47088] client disconnect
+[16:05:51.409][10.0.2.15:47100] client connect
+[16:05:51.445][10.0.2.15:47100] server connect en.wikipedia.org:443 (208.80.154.224:443)
+10.0.2.15:47100: GET https://en.wikipedia.org/ HTTP/2.0
+     << HTTP/2.0 301 Moved Permanently 0b
+URL: https://en.wikipedia.org/wiki/Main_Page
+Subprocess output: current running dir:  /home/mjt58/SynapSense/sniffles/mitm
+
+10.0.2.15:47100: GET https://en.wikipedia.org/wiki/Main_Page HTTP/2.0
+     << HTTP/2.0 200 OK 23.8k
+[16:05:51.681][10.0.2.15:47116] client connect
+[16:05:51.729][10.0.2.15:47116] server connect safebrowsing.googleapis.com:443 (142.250.80.42:443)
+10.0.2.15:47116: GET https://safebrowsing.googleapis.com/v4/fullHashes:find?… HTTP/2.0
+     << HTTP/2.0 200 OK 260b
+[16:05:52.046][10.0.2.15:47116] client disconnect
+[16:05:52.047][10.0.2.15:47116] server disconnect safebrowsing.googleapis.com:443 (142.250.80.42:443)
+[16:05:52.277][10.0.2.15:47132] client connect
+[16:05:52.280][10.0.2.15:47142] client connect
+[16:05:52.281][10.0.2.15:47144] client connect
+[16:05:52.282][10.0.2.15:47146] client connect
+[16:05:52.282][10.0.2.15:47162] client connect
+[16:05:52.286][10.0.2.15:47168] client connect
+[16:05:52.319][10.0.2.15:47176] client connect
+[16:05:52.320][10.0.2.15:47184] client connect
+10.0.2.15:47100: GET https://en.wikipedia.org/w/load.php?lang=en&modules=ext… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+[16:05:52.324][10.0.2.15:47162] client disconnect
+[16:05:52.329][10.0.2.15:47162] error establishing server connection: client disconnected
+[16:05:52.331][10.0.2.15:47168] client disconnect
+[16:05:52.337][10.0.2.15:47168] error establishing server connection: client disconnected
+10.0.2.15:47100: GET https://en.wikipedia.org/w/load.php?lang=en&modules=sit… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+[16:05:52.359][10.0.2.15:47176] client disconnect
+[16:05:52.359][10.0.2.15:47184] client disconnect
+10.0.2.15:47100: GET https://en.wikipedia.org/static/images/mobile/copyright… HTTP/2.0
+     << HTTP/2.0 200 OK 3.2k
+[16:05:52.362][10.0.2.15:47176] error establishing server connection: client disconnected
+[16:05:52.366][10.0.2.15:47184] error establishing server connection: client disconnected
+10.0.2.15:47100: GET https://en.wikipedia.org/w/load.php?lang=en&modules=sta… HTTP/2.0
+     << HTTP/2.0 200 OK 19.7k
+[16:05:52.391][10.0.2.15:47132] server connect upload.wikimedia.org:443 (208.80.154.240:443)
+[16:05:52.396][10.0.2.15:47144] server connect upload.wikimedia.org:443 (208.80.154.240:443)
+[16:05:52.397][10.0.2.15:47142] server connect upload.wikimedia.org:443 (208.80.154.240:443)
+[16:05:52.399][10.0.2.15:47146] server connect upload.wikimedia.org:443 (208.80.154.240:443)
+10.0.2.15:47100: GET https://en.wikipedia.org/w/load.php?modules=skins.vecto… HTTP/2.0
+ << stream reset by client (CANCEL)
+10.0.2.15:47100: GET https://en.wikipedia.org/w/load.php?modules=skins.vecto… HTTP/2.0
+ << stream reset by client (CANCEL)
+10.0.2.15:47100: GET https://en.wikipedia.org/w/load.php?modules=skins.vecto… HTTP/2.0
+ << stream reset by client (CANCEL)
+10.0.2.15:47100: GET https://en.wikipedia.org/w/load.php?modules=skins.vecto… HTTP/2.0
+     << HTTP/2.0 200 OK 195b
+10.0.2.15:47144: GET https://upload.wikimedia.org/wikipedia/commons/thumb/8/… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:47146: GET https://upload.wikimedia.org/wikipedia/commons/thumb/b/… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:47142: GET https://upload.wikimedia.org/wikipedia/commons/thumb/a/… HTTP/2.0
+     << HTTP/2.0 200 OK 10.2k
+10.0.2.15:47132: GET https://upload.wikimedia.org/wikipedia/commons/thumb/1/… HTTP/2.0
+     << HTTP/2.0 200 OK 5.1k
+[16:05:52.578][10.0.2.15:47142] client disconnect
+[16:05:52.579][10.0.2.15:47146] client disconnect
+[16:05:52.580][10.0.2.15:47142] server disconnect upload.wikimedia.org:443 (208.80.154.240:443)
+[16:05:52.581][10.0.2.15:47146] server disconnect upload.wikimedia.org:443 (208.80.154.240:443)
+[16:05:52.590][10.0.2.15:47132] client disconnect
+[16:05:52.592][10.0.2.15:47132] server disconnect upload.wikimedia.org:443 (208.80.154.240:443)
+10.0.2.15:47100: GET https://en.wikipedia.org/static/apple-touch/wikipedia.p… HTTP/2.0
+ << stream reset by client (CANCEL)
+10.0.2.15:47100: GET https://en.wikipedia.org/api/rest_v1/page/summary/NBC_M… HTTP/2.0
+     << HTTP/2.0 200 OK 718b
+10.0.2.15:47100: GET https://en.wikipedia.org/api/rest_v1/page/summary/NBC_M… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:47144: GET https://upload.wikimedia.org/wikipedia/commons/thumb/c/… HTTP/2.0
+     << HTTP/2.0 200 OK 26.2k
+URL: https://en.wikipedia.org/wiki/NBC_Montana
+Subprocess output: current running dir:  /home/mjt58/SynapSense/sniffles/mitm
+
+10.0.2.15:47100: GET https://en.wikipedia.org/wiki/NBC_Montana HTTP/2.0
+     << HTTP/2.0 200 OK 44.6k
+10.0.2.15:47144: GET https://upload.wikimedia.org/wikipedia/commons/thumb/c/… HTTP/2.0
+     << HTTP/2.0 200 OK 6.4k
+10.0.2.15:47144: GET https://upload.wikimedia.org/wikipedia/commons/thumb/2/… HTTP/2.0
+     << HTTP/2.0 200 OK 10.9k
+10.0.2.15:47144: GET https://upload.wikimedia.org/wikipedia/commons/thumb/9/… HTTP/2.0
+     << HTTP/2.0 200 OK 2.9k
+10.0.2.15:47144: GET https://upload.wikimedia.org/wikipedia/commons/thumb/3/… HTTP/2.0
+     << HTTP/2.0 200 OK 3.8k
+10.0.2.15:47100: GET https://en.wikipedia.org/w/load.php?lang=en&modules=ext… HTTP/2.0
+     << HTTP/2.0 304 Not Modified 0b
+10.0.2.15:47100: GET https://en.wikipedia.org/w/load.php?lang=en&modules=ext… HTTP/2.0
+     << HTTP/2.0 200 OK 8.7k
+10.0.2.15:47144: GET https://upload.wikimedia.org/wikipedia/commons/thumb/5/… HTTP/2.0
+     << HTTP/2.0 200 OK 976b
+10.0.2.15:47144: GET https://upload.wikimedia.org/wikipedia/commons/b/b5/But… HTTP/2.0
+     << HTTP/2.0 200 OK 337b
+10.0.2.15:47144: GET https://upload.wikimedia.org/wikipedia/commons/d/d4/But… HTTP/2.0
+     << HTTP/2.0 200 OK 285b
+[16:05:56.630][10.0.2.15:47190] client connect
+[16:05:56.688][10.0.2.15:47190] server connect 905c45a1-106b-4c5a-b825-1f402506f64a-pdata-v4.unique.k.fastly-insights.com:443 (146.75.30.91:443)
+10.0.2.15:47190: GET https://905c45a1-106b-4c5a-b825-1f402506f64a-pdata-v4.u…
+              << 200 OK 378b
+[16:05:56.763][10.0.2.15:47190] server disconnect 905c45a1-106b-4c5a-b825-1f402506f64a-pdata-v4.unique.k.fastly-insights.com:443 (146.75.30.91:443)
+[16:05:56.765][10.0.2.15:47190] client disconnect
+[16:05:56.786][10.0.2.15:47206] client connect
+10.0.2.15:52144: POST https://www.fastly-insights.com/b?k=6a52360a-f306-421e-…
+              << 204 No Content 0b
+[16:05:56.824][10.0.2.15:47206] server connect bare-v4.pops.fastly-insights.com:443 (146.75.34.91:443)
+10.0.2.15:47206: GET https://bare-v4.pops.fastly-insights.com/o.svg?u=905c45…
+              << 200 OK 378b
+[16:05:56.892][10.0.2.15:47206] server disconnect bare-v4.pops.fastly-insights.com:443 (146.75.34.91:443)
+[16:05:56.897][10.0.2.15:47206] client disconnect
+[16:06:14.608][10.0.2.15:51932] client connect
+10.0.2.15:33406: POST https://www.wish.com/api/experiments/record-assignment-… HTTP/2.0
+     << HTTP/2.0 200 OK 107b
+[16:06:14.749][10.0.2.15:51932] server connect shavar.services.mozilla.com:443 (44.228.151.57:443)
+10.0.2.15:51932: POST https://shavar.services.mozilla.com/downloads?client=na…
+              << 200 OK 8b
+[16:06:15.066][10.0.2.15:51932] server disconnect shavar.services.mozilla.com:443 (44.228.151.57:443)
+[16:06:15.068][10.0.2.15:51932] client disconnect
+10.0.2.15:33406: POST https://www.wish.com/api/web/user/status HTTP/2.0
+     << HTTP/2.0 200 OK 7.0k

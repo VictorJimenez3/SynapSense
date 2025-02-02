@@ -32,9 +32,9 @@ def response(flow: http.HTTPFlow):
                 with open(file_path, "w") as f:
                     f.write(html.decode("utf-8"))
                     # Construct the command and arguments as a list
-
+                    curdur = os.path.expanduser("~/SynapSense/venv/bin/python3")
                     command = [
-                        "/home/mjt58/project/SynapSense/venv/bin/python3",
+                        curdur,
                         "../database.py",
                         "--network-items",
                         "--insert",
