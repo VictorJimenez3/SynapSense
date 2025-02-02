@@ -24,7 +24,8 @@ elif "--network-items" in arguments and "--find" in arguments:
 elif "--user-response" in arguments and "--set" in arguments:
     user_score = arguments[arguments.index("--set") + 1]
     t_o = arguments[arguments.index("--time") + 1]
-    add_user_score(user_score, t_o)
+    add_user_score(int(user_score), float(t_o))
 
 elif "--user-response" in arguments and "--find" in arguments:
     results = find_user_scores()
+    print(results)
