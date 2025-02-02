@@ -36,34 +36,30 @@ def create_tables():
 
 def insert_network_items(website_url: str, path: str, time_original: float):
     create_tables()
-    # Connect to the SQLite database
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
-    # Insert each path associated with the URL
+    
     cursor.execute('''
         INSERT INTO NetworkLogger (URL, PATH, TIME)
         VALUES (?, ?, ?)
-    ''', (website_url, path, str(float(time.perf_counter()) - float(time_original))))
+    ''', (website_url, path, str(float(time.time()))))  # ✅ Use time.time() instead
 
-    # Commit changes and close the connection
     conn.commit()
     conn.close()
 
-def insert_network_items(rating: int, time_original):
+def add_user_score(rating: int, time_original: float):
     create_tables()
-    # Connect to the SQLite database
     conn = sqlite3.connect(db_path)
     cursor = conn.cursor()
 
-    # Insert each path associated with the URL
     cursor.execute('''
         INSERT INTO CheckIns (USER_SCORE, TIME)
         VALUES (?, ?)
-    ''', (int(rating), str(float(time.perf_counter()) - float(time_original))))
+    ''', (int(rating), str(float(time.time()))))  # ✅ Use time.time() instead
 
-    # Commit changes and close the connection
     conn.commit()
     conn.close()
+
 
 def find_network_items():
     create_tables()

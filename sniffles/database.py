@@ -1,5 +1,5 @@
 import sqlite3, sys
-from sqliteAdapter import create_tables, insert_network_items, find_network_items
+from sqliteAdapter import create_tables, insert_network_items, find_network_items, add_user_score, find_user_scores
 
 create_tables()
 
@@ -20,7 +20,7 @@ if "--network-items" in arguments and "--insert" in arguments:
 elif "--network-items" in arguments and "--find" in arguments:
     results = find_network_items()
     print(results)
-    
+
 elif "--user-response" in arguments and "--set" in arguments:
     user_score = arguments[arguments.index("--set") + 1]
     t_o = arguments[arguments.index("--time") + 1]

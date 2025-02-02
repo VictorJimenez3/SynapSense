@@ -1,5 +1,40 @@
 #include <wx/wx.h>
+#include <iostream>
+#include <unistd.h>
+#include <ctime>
 
+// Define the Python script location
+#define PYTHON_SCRIPT "sniffles/database.py"
+
+// Function to execute the Python script using execlp
+void logData(int response) {
+    pid_t pid = fork(); // Create a child process
+
+    if (pid == -1) {
+        std::cerr << "❌ Error: Failed to fork process." << std::endl;
+    } else if (pid == 0) {
+        // Get the current timestamp
+        time_t now = time(0);
+        std::string timestamp = std::to_string(now);
+        
+        std::cout << "Timestamp C++:" + timestamp.c_str() << std::endl;
+
+        // Ecute Python script with arguments
+        execlp("python3", "python3", PYTHON_SCRIPT, 
+               "--user-response", "--set",
+               std::to_string(response).c_str(), "--time", 
+               timestamp.c_str(), (char*)NULL);
+
+        // If execlp fails, print an error and exit child process
+        std::cerr << "❌ Error: Failed to execute Python script." << std::endl;
+        exit(1);
+    } else {
+        // Parent process continues
+        std::cout << "✅ Sent response " << response << " to Python script." << std::endl;
+    }
+}
+
+// GUI Frame
 class MyFrame : public wxFrame {
 public:
     MyFrame() : wxFrame(nullptr, wxID_ANY, "How are you feeling? (1-5)", wxDefaultPosition, wxSize(500, 250)) {
@@ -29,8 +64,11 @@ public:
 
 private:
     void OnButtonClick(wxCommandEvent& event) {
-        int selection = event.GetId() - 1000;
+        int selection = event.GetId() - 1000; // Extract number (1-5)
         wxMessageBox(wxString::Format("You selected: %d", selection), "Response", wxOK | wxICON_INFORMATION);
+        
+        // Call Python script with response
+        logData(selection);
     }
 };
 
